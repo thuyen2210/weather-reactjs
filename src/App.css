@@ -1,38 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  overflow: hidden;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#background-music {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  margin-left: 20px;
+}
+
+
 .App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
   color: white;
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.App.background-video #background-image.loaded {
+  opacity: 1; /* Hiển thị hình ảnh khi đã tải xong */
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* Ví dụ sử dụng media query cho màn hình lớn hơn 768px */
+@media (min-width: 768px) {
+  /* CSS cho màn hình lớn hơn 768px */
+
+}
+
+/* Ví dụ sử dụng media query cho màn hình nhỏ hơn hoặc bằng 768px */
+@media (max-width: 768px) {
+  /* CSS cho màn hình nhỏ hơn hoặc bằng 768px */
+  .button1 {
+    display: none;
+  }.button {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+  
 }

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import WeatherApp from './conponents/WeatherApp';
+
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <WeatherApp />
+      <div className='footer'>
+        <h2>
+        Design by Thế Thuyên
+        </h2>  
+        
+        <a className='footer_a' href="https://www.facebook.com/profile.php?id=100007362887304"><i class="fa-brands fa-facebook footer_i"></i></a>
+      </div>
     </div>
   );
 }
 
 export default App;
+
