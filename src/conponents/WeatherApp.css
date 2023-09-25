@@ -244,35 +244,51 @@
     }
 
     .header_find {
-        /* background: brown; */
+        
         height: 35px;
-        width: 178px;
+        width: 287px;
         border-radius: 24px;
         display: flex;
         justify-content: space-evenly;
     }
 
     .header_input {
-        width: 125px;
+        width: 100%;
         height: 90%;
         border-radius: 20px;
         padding-left: 10px;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: inherit;
+    }
+
+    .header_btn {
+        background: #ffffff00;
+        border: 0px;
+        width: 11%;
+        height: 95%;
+        margin-left: 15px;
     }
 
     .header__logo div {
         display: none;
     }
 
-    .header-menu {
+    .header_menu {
         display: flex;
-    width: 10%;
-    padding-left: 2px;
-    align-items: stretch;
-    justify-content: space-between;
-    margin-right: 26px;
+        width: 0%;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-right: 26px;
     }
+
+    .button {
+        display: none;
+    }
+    .button1 {
+        display: none;
+    }
+
+    
 
 
     .test1{
